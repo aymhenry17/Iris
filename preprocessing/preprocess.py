@@ -8,7 +8,7 @@ time.sleep(10)
 
 # Lire le CSV
 df = pd.read_csv('/data/iris.csv')
-df = df[['sepal length (cm)', 'sepal width (cm)']].dropna()
+df = df[['sepal_length', 'sepal_width']].dropna()
 
 # Normaliser
 scaler = StandardScaler()
