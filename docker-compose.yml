@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+
+  db:
+    image: postgres:14
+    container_name: postgres_container
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - iris-net
+
+  preprocessing:
+    build: ./preprocessing
+    container_name: preprocessing_container
+    depends_on:
+      - db
+    volumes:
+      - ./data:/data
+    networks:
+      - iris-net
+
+volumes:
+  postgres_data:
+
+networks:
+  iris-net:
