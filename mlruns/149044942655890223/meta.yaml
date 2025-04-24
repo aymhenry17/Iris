@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/julie/Desktop/iris/Iris/mlruns/149044942655890223
+creation_time: 1745496874004
+experiment_id: '149044942655890223'
+last_update_time: 1745496874004
+lifecycle_stage: active
+name: iris_regression_experiment
