@@ -56,7 +56,21 @@ services:
     networks:
       - iris-net
     volumes:
-      - ./api:/app
+      - .:/app
+
+  modeling:
+    build:
+      context: .
+      dockerfile: Dockerfile.modeling
+    container_name: modeling_container
+    depends_on:
+      - db
+      - mlflow
+    networks:
+      - iris-net
+    volumes:
+      - .:/app
+
 
 volumes:
   postgres_data:
