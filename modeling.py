@@ -50,4 +50,6 @@ with mlflow.start_run():
     # Enregistrement du modèle dans MLflow
     mlflow.sklearn.log_model(model, "random_forest_model")
     
-    print("Modèle entraîné et enregistré avec succès !")
+    # Récupérer le run_id du modèle enregistré
+    run_id = mlflow.active_run().info.run_id
+    print(f"Modèle enregistré avec succès ! Run ID: {run_id}")

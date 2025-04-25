@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nguen/OneDrive/Documents/api/mlruns/177564898664332604/7afbdaed4db44849b9b8285c7fd85ece/artifacts
+end_time: 1745508031527
+entry_point_name: ''
+experiment_id: '177564898664332604'
+lifecycle_stage: active
+run_id: 7afbdaed4db44849b9b8285c7fd85ece
+run_name: thundering-kite-827
+run_uuid: 7afbdaed4db44849b9b8285c7fd85ece
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745508016989
+status: 3
+tags: []
+user_id: nguen

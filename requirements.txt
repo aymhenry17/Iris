@@ -3,3 +3,6 @@ uvicorn[standard]
 pydantic
 mlflow
 scikit-learn
+pandas
+sqlalchemy
+psycopg2-binary
